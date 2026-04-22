@@ -65,12 +65,16 @@ body.Body {
     margin-left: 100px;
 }
 
+.Sobre-mi-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .Linea1 {
-    width: 800px;
+    flex: 1;
     height: 2px;
     background-color: #172530;
-    margin-left: 350px;
-    margin-top: -35px;
 }
 
 /*======================TEXTO====================*/
