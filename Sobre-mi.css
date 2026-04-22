@@ -72,6 +72,7 @@ body.Body {
     flex: 1;
     height: 2px;
     background-color: #172530;
+    margin-left: 20px; /* 👈 esto crea el "corte" visual */
 }
 
 /*======================TEXTO====================*/
