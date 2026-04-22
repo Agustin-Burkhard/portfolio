@@ -1,0 +1,119 @@
+body.Body {
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    background-image: url(imagenes/fondoportafolio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Navegador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    width: 100%; /* 👈 clave */
+    height: 80px;
+
+    background-color: rgba(23, 37, 48, 0.9);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.Sobre-mi-nav,
+.Experiencia-nav,
+.Inicio-nav,
+.Proyectos-nav,
+.Contacto-nav {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.Sobre-mi-nav:hover,
+.Experiencia-nav:hover,
+.Inicio-nav:hover,
+.Proyectos-nav:hover,
+.Contacto-nav:hover {
+    color: #5c6768;
+}
+
+.Inicio-nav {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transform: translateY(-1px);
+}
+
+/*===============Sobre mi================*/
+
+.Sobre-mi-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.Sobre-mi {
+    font-family: Times, "New Roman", serif;
+    color: #172530;
+    font-size: 55px;
+    margin-left: 100px;
+}
+
+.Linea1 {
+    width: 800px;
+    height: 2px;
+    background-color: #172530;
+    margin-left: 350px;
+    margin-top: -35px;
+}
+
+/*======================TEXTO====================*/
+
+.Sobre-mi-texto {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 50px;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.Sobre-mi-texto1,
+.Sobre-mi-texto2 {
+    text-align: center;
+    color: #111;
+    font-family: Times, "New Roman", serif;
+    font-size: 26px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/*=====================REDES=======================*/
+
+.Redes {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.github,
+.linkedin,
+.email {
+    width: 60px;
+    transition: transform 0.2s ease;
+}
+
+.github:hover,
+.linkedin:hover,
+.email:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,161 @@
+body.Body {
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    background-image: url(imagenes/fondoportafolio.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.contenido-experiencia {
+    padding: 20px 80px 80px;
+}
+
+.encabezado-experiencia {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.Experiencia {
+    font-family: Times, "New Roman", serif;
+    color: #172530;
+    font-size: 60px;
+    margin: 0;
+}
+
+.Linea2 {
+    flex: 1;
+    height: 2px;
+    background-color: #172530;
+}
+
+.CV-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+.CV {
+    text-decoration: none;
+    font-family: Times, "New Roman", serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #6a35c9;
+    background-color: #dfe94f;
+    padding: 12px 35px;
+    border-radius: 25px;
+    transition: transform 0.2s ease;
+}
+
+.CV:hover {
+    transform: scale(1.05);
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.Front-end-container,
+.Back-end-container {
+    width: 320px;
+    height: 90px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+    transition: height 0.4s ease, transform 0.3s ease;
+}
+
+.Front-end-container:hover,
+.Back-end-container:hover {
+    height: 280px;
+    transform: translateY(-6px);
+}
+
+.Front-end-titulo,
+.Back-end-titulo {
+    font-family: Times, "New Roman", serif;
+    font-size: 42px;
+    color: #fff;
+    background-color: #6d7b86;
+    border-radius: 20px;
+    padding: 12px 20px;
+    margin: 0;
+}
+
+.logos-tecnologia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Front-end-container:hover .logos-tecnologia,
+.Back-end-container:hover .logos-tecnologia {
+    opacity: 1;
+}
+
+.imagen1,
+.imagen2,
+.imagen3 {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.Redes {
+    position: fixed;
+    right: 30px;   /* antes 40px → un poquito más a la derecha */
+    bottom: 25px;  /* antes 40px → un poquito más abajo */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.Redes img {
+    width: 60px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.Redes img:hover {
+    transform: scale(1.15);
+}
+
+
+.github,
+.linkedin,
+.email {
+    width: 60px;
+    transition: transform 0.2s ease;
+}
+
+.github:hover,
+.linkedin:hover,
+.email:hover {
+    transform: scale(1.1);
+}
