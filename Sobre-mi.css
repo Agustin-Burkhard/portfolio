@@ -55,20 +55,17 @@ body.Body {
 
 .Sobre-mi-container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 80px 40px;
 }
 
 .Sobre-mi {
     font-family: Times, "New Roman", serif;
     color: #172530;
-    font-size: 55px;
-    margin-left: 100px;
-}
-
-.Sobre-mi-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    font-size: 60px;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .Linea1 {
