@@ -1,0 +1,118 @@
+body.Body {
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    background-image: url(imagenes/fondoportafolio2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.contenido-contacto {
+    padding: 20px 80px 80px;
+}
+
+.encabezado-contacto {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.Contacto-titulo {
+    font-family: Times, "New Roman", serif;
+    color: #fff;
+    font-size: 60px;
+    margin: 0;
+}
+
+.Linea4 {
+    flex: 1;
+    height: 2px;
+    background-color: #fff;
+}
+
+.contacto-card {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.Inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.Input1,
+.Input2,
+.Input3 {
+    border: none;
+    outline: none;
+    font-family: Times, "New Roman", serif;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #172530;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.Input1::placeholder,
+.Input2::placeholder,
+.Input3::placeholder {
+    color: #5f6770;
+}
+
+.Input3 {
+    grid-column: 1 / 3;
+    min-height: 260px;
+    resize: none;
+}
+
+.Button-enviar {
+    grid-column: 1 / 3;
+    justify-self: center;
+    border: none;
+    cursor: pointer;
+    font-family: Times, "New Roman", serif;
+    font-size: 28px;
+    color: white;
+    background-color: #d72626;
+    padding: 14px 60px;
+    border-radius: 30px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.Button-enviar:hover {
+    transform: scale(1.05);
+    background-color: #b91f1f;
+}
+
+.Redes {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.Redes img {
+    width: 60px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.Redes img:hover {
+    transform: scale(1.15);
+}
